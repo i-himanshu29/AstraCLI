@@ -64,3 +64,5 @@ temp/
 # Compiled files
 # =========================
 *.tsbuildinfo
+
+/src/generated/prisma
