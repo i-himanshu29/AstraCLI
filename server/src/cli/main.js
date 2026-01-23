@@ -9,7 +9,8 @@ import { Command } from "commander";
 import { login } from "./commands/auth/login.js";
 import { logout } from "./commands/auth/logout.js";
 import { whoami } from "./commands/auth/whoami.js";
-// import { wakeUp } from "./commands/ai/wakeUp.js";
+import { wakeUp } from "./commands/ai/wakeup.js";
+
 
 dotenv.config();
 
@@ -32,7 +33,7 @@ async function main() {
     .description("Astra CLI - Device Flow Authentication");
 
   // Add commands
-    // program.addCommand(wakeUp);
+    program.addCommand(wakeUp);
     program.addCommand(login);
     program.addCommand(logout);
     program.addCommand(whoami);
